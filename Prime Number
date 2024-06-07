@@ -1,0 +1,13 @@
+def prime(n,i=2):
+    if n==i:
+        return True
+    elif n/2==0:
+        return False
+    return prime(n,i+1)
+    
+    
+n=int(input())
+if prime(n):
+    print("yes",n,"it is a prime number" )
+else:
+    print("no",n,"it is not a prime number")
